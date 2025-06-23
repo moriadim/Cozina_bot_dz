@@ -126,6 +126,7 @@ async def subscribe(update: Update, context: ContextTypes.DEFAULT_TYPE):
 📞 راني هنا إذا حبيتي تسقسيني ولا تحتاجي توضيح... تهلاي في روحك ونستناك يا الزينة! 💐"""
     )
 
+print("TOOOOOOKEN ===", os.getenv("TELEGRAM_TOKEN"))
 
 async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = str(update.message.from_user.id)
